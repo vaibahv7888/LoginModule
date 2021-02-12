@@ -12,6 +12,8 @@
 		F031438C25D66700002F99C3 /* LoginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = F031437E25D66700002F99C3 /* LoginModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F031439925D66731002F99C3 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F031439825D66731002F99C3 /* LoginViewController.xib */; };
 		F031439D25D668B2002F99C3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031439C25D668B2002F99C3 /* LoginViewController.swift */; };
+		F0E8B85925D6A55600085830 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0E8B85825D6A55600085830 /* LoginView.xib */; };
+		F0E8B85D25D6A86800085830 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E8B85C25D6A86800085830 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		F031438B25D66700002F99C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F031439825D66731002F99C3 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		F031439C25D668B2002F99C3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F0E8B85825D6A55600085830 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		F0E8B85C25D6A86800085830 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				F031439825D66731002F99C3 /* LoginViewController.xib */,
 				F031439C25D668B2002F99C3 /* LoginViewController.swift */,
+				F0E8B85825D6A55600085830 /* LoginView.xib */,
+				F0E8B85C25D6A86800085830 /* LoginView.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -192,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0E8B85925D6A55600085830 /* LoginView.xib in Resources */,
 				F031439925D66731002F99C3 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0E8B85D25D6A86800085830 /* LoginView.swift in Sources */,
 				F031439D25D668B2002F99C3 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
