@@ -25,8 +25,8 @@ s.source = { :git => "https://github.com/vaibahv7888/LoginModule.git",
 
 # 7
 s.framework = "UIKit"
-s.dependency 'Alamofire', '~> 4.7'
-s.dependency 'MBProgressHUD', '~> 1.1.0'
+#s.dependency 'Alamofire', '~> 4.7'
+#s.dependency 'MBProgressHUD', '~> 1.1.0'
 
 # 8
 s.source_files = "LoginModule/**/*.{swift}"
