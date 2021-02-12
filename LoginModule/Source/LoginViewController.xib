@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="4b2-rA-eYz" customClass="LoginViewController" customModule="LoginModule" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="rLF-XZ-0ir">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FDi-Wb-wgl">
+                        <rect key="frame" x="20" y="336" width="374" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pasword" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eaG-Uc-d3N">
+                        <rect key="frame" x="20" y="380" width="374" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GdC-dj-ygr">
+                        <rect key="frame" x="20" y="433" width="374" height="40"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                        <state key="normal" title="Login">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="loginButtonClicked:" destination="4b2-rA-eYz" eventType="touchUpInside" id="DEl-bp-jl2"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <viewLayoutGuide key="safeArea" id="wlp-hB-NBu"/>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="FDi-Wb-wgl" firstAttribute="leading" secondItem="wlp-hB-NBu" secondAttribute="leading" constant="20" id="2pe-rq-zL2"/>
+                    <constraint firstItem="GdC-dj-ygr" firstAttribute="height" secondItem="wlp-hB-NBu" secondAttribute="height" multiplier="0.0488998" id="4Gb-bv-01Z"/>
+                    <constraint firstItem="eaG-Uc-d3N" firstAttribute="leading" secondItem="wlp-hB-NBu" secondAttribute="leading" constant="20" id="CL1-GC-kCv"/>
+                    <constraint firstItem="eaG-Uc-d3N" firstAttribute="top" secondItem="FDi-Wb-wgl" secondAttribute="bottom" constant="10" id="GxQ-Xd-iXz"/>
+                    <constraint firstItem="wlp-hB-NBu" firstAttribute="trailing" secondItem="FDi-Wb-wgl" secondAttribute="trailing" constant="20" id="IVc-PE-9Cy"/>
+                    <constraint firstItem="GdC-dj-ygr" firstAttribute="top" secondItem="eaG-Uc-d3N" secondAttribute="bottom" constant="19" id="KQm-OK-Pn1"/>
+                    <constraint firstItem="wlp-hB-NBu" firstAttribute="trailing" secondItem="GdC-dj-ygr" secondAttribute="trailing" constant="20" id="O6x-KY-9cj"/>
+                    <constraint firstItem="wlp-hB-NBu" firstAttribute="trailing" secondItem="eaG-Uc-d3N" secondAttribute="trailing" constant="20" id="cwZ-kw-a28"/>
+                    <constraint firstItem="GdC-dj-ygr" firstAttribute="leading" secondItem="wlp-hB-NBu" secondAttribute="leading" constant="20" id="jrD-hc-XNe"/>
+                    <constraint firstItem="FDi-Wb-wgl" firstAttribute="centerY" secondItem="wlp-hB-NBu" secondAttribute="centerY" constant="-100" id="nTe-oT-3ar"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="passwordTextField" destination="eaG-Uc-d3N" id="xBS-7l-6R9"/>
+                <outlet property="usernameTextField" destination="FDi-Wb-wgl" id="HK4-zP-ty8"/>
+            </connections>
+            <point key="canvasLocation" x="618.84057971014499" y="107.8125"/>
+        </viewController>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

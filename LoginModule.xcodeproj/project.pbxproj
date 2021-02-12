@@ -10,6 +10,8 @@
 		F031438525D66700002F99C3 /* LoginModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F031437B25D66700002F99C3 /* LoginModule.framework */; };
 		F031438A25D66700002F99C3 /* LoginModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031438925D66700002F99C3 /* LoginModuleTests.swift */; };
 		F031438C25D66700002F99C3 /* LoginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = F031437E25D66700002F99C3 /* LoginModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F031439925D66731002F99C3 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F031439825D66731002F99C3 /* LoginViewController.xib */; };
+		F031439D25D668B2002F99C3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F031439C25D668B2002F99C3 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		F031438425D66700002F99C3 /* LoginModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F031438925D66700002F99C3 /* LoginModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModuleTests.swift; sourceTree = "<group>"; };
 		F031438B25D66700002F99C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F031439825D66731002F99C3 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		F031439C25D668B2002F99C3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 		F031437D25D66700002F99C3 /* LoginModule */ = {
 			isa = PBXGroup;
 			children = (
+				F031439725D66712002F99C3 /* Source */,
 				F031437E25D66700002F99C3 /* LoginModule.h */,
 				F031437F25D66700002F99C3 /* Info.plist */,
 			);
@@ -84,6 +89,15 @@
 				F031438B25D66700002F99C3 /* Info.plist */,
 			);
 			path = LoginModuleTests;
+			sourceTree = "<group>";
+		};
+		F031439725D66712002F99C3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F031439825D66731002F99C3 /* LoginViewController.xib */,
+				F031439C25D668B2002F99C3 /* LoginViewController.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +161,7 @@
 				TargetAttributes = {
 					F031437A25D66700002F99C3 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					F031438325D66700002F99C3 = {
 						CreatedOnToolsVersion = 12.3;
@@ -177,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F031439925D66731002F99C3 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F031439D25D668B2002F99C3 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +358,7 @@
 		F031439025D66700002F99C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +374,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vab.LoginModule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +383,7 @@
 		F031439125D66700002F99C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -387,6 +407,7 @@
 		F031439325D66700002F99C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LoginModuleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +425,7 @@
 		F031439425D66700002F99C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LoginModuleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
